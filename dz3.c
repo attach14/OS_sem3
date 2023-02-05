@@ -29,7 +29,7 @@ int main(int argc, char* argv[]){
         pid = getpid();
         ppid = getppid();
         sscanf(argv[1], "%d", &n);
-        if(n < 0 || n > 60){
+        if(n < 1 || n > 60){
             printf("I am a parent, my pid = %d, my ppid = %d, my chpid = %d, n can't be less than 0 or greater than 60\n", (int)pid, (int)ppid, (int)chpid);
             return 0;
         }
